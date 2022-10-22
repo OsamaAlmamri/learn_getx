@@ -47,7 +47,7 @@ class HomePage extends StatelessWidget {
           child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          GetBuilder<counterController>(
+          GetX<counterController>(
             init: counterController(),
             builder: (controller) => Row(
               mainAxisAlignment: MainAxisAlignment.center,
