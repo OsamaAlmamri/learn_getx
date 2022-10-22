@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'screen1.dart';
 import 'screen2.dart';
-
+import 'appbar.dart';
 class Screen3 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -12,6 +12,7 @@ class Screen3 extends StatelessWidget {
         // the App.build method, and use it to set our appbar title.
         title: Text('Screen 3 '),
     ),
+        bottomNavigationBar: HelloConvexAppBar(3),
     body: Container(
       child: Column(
         children: [

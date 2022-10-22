@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'Home.dart';
 import 'Controllers/counterController2.dart';
-
+import 'appbar.dart';
 import 'screen1.dart';
 import 'screen3.dart';
 
@@ -18,6 +18,7 @@ class Screen2 extends StatelessWidget {
         // the App.build method, and use it to set our appbar title.
         title: Text('Screen 2'),
       ),
+      bottomNavigationBar: HelloConvexAppBar(2),
       body: Center(
           // Center is a layout widget. It takes a single child and positions it
           // in the middle of the parent.

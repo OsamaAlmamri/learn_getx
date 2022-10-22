@@ -4,6 +4,7 @@ import 'Controllers/counterController.dart';
 import 'screen2.dart';
 import 'screen3.dart';
 import 'Home.dart';
+import 'appbar.dart';
 
 class Screen1 extends StatelessWidget {
   @override
@@ -15,6 +16,7 @@ class Screen1 extends StatelessWidget {
         // the App.build method, and use it to set our appbar title.
         title: Text('Screen 1'),
       ),
+      bottomNavigationBar: HelloConvexAppBar(1),
       body: Center(
           // Center is a layout widget. It takes a single child and positions it
           // in the middle of the parent.
