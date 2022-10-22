@@ -59,7 +59,7 @@ class HomePage extends StatelessWidget {
                   padding: EdgeInsets.symmetric(horizontal: 20),
                 )),
                 Center(
-                    child: Text("${controller.counter}",
+                    child: Text("${controller.counter.value}",
                   style: TextStyle(fontSize: 30),
                 )),
                 Container(
