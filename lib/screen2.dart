@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'Home.dart';
 import 'Controllers/counterController2.dart';
 
 import 'screen1.dart';
@@ -68,6 +69,11 @@ class Screen2 extends StatelessWidget {
                     Get.to(Screen3());
                   },
                   child: Text('go to scrren 3')),
+              ElevatedButton(
+                  onPressed: () {
+                    Get.to(HomePage());
+                  },
+                  child: Text('Home ')),
               ElevatedButton(
                   onPressed: () {
                     Get.back();

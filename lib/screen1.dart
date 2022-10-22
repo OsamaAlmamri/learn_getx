@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'Controllers/counterController.dart';
 import 'screen2.dart';
 import 'screen3.dart';
+import 'Home.dart';
 
 class Screen1 extends StatelessWidget {
   @override
@@ -72,6 +73,11 @@ class Screen1 extends StatelessWidget {
                     Get.to(Screen3());
                   },
                   child: Text('go to scrren 3')),
+              ElevatedButton(
+                  onPressed: () {
+                    Get.to(HomePage());
+                  },
+                  child: Text('Home ')),
               ElevatedButton(
                   onPressed: () {
                     Get.back();
