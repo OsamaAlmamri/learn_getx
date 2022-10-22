@@ -1,8 +1,9 @@
 import 'package:get/get.dart';
 
-class counterController extends GetxController {
-  int counter = 0;
-  int counter2 = 0;
+class counterController2 extends GetxController {
+  RxInt counter = 0.obs;
+  RxInt counter2 = 0.obs;
+
 
   void incrment() {
     counter++;
@@ -24,7 +25,7 @@ class counterController extends GetxController {
     update();
   }
 
-  int get sum {
-    return counter + counter2;
+  int  get sum {
+    return counter.value + counter2.value;
   }
 }
