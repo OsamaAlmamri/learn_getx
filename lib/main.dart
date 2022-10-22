@@ -33,6 +33,8 @@ class MyApp extends StatelessWidget {
 
 class HomePage extends StatelessWidget {
   @override
+  final counterController controller = Get.put(counterController());
+
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
@@ -47,9 +49,7 @@ class HomePage extends StatelessWidget {
           child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          GetX<counterController>(
-            init: counterController(),
-            builder: (controller) => Row(
+          Obx(() => Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
@@ -59,7 +59,8 @@ class HomePage extends StatelessWidget {
                   padding: EdgeInsets.symmetric(horizontal: 20),
                 )),
                 Center(
-                    child: Text("${controller.counter.value}",
+                    child: Text(
+                  "${controller.counter.value}",
                   style: TextStyle(fontSize: 30),
                 )),
                 Container(
