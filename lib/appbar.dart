@@ -14,9 +14,12 @@ class HelloConvexAppBar extends StatelessWidget {
       items: [
         TabItem(icon: Icons.home, title: 'Home'),
         TabItem(icon: Icons.map, title: 'Screen1'),
+
         TabItem(icon: Icons.add, title: 'Screen2'),
         TabItem(icon: Icons.message, title: 'Screen3'),
         TabItem(icon: Icons.settings, title: 'Settings'),
+        TabItem(icon: Icons.settings, title: 'Challange1'),
+        TabItem(icon: Icons.dashboard, title: 'MyDropdownSearch'),
       ],
       onTap: (int i) {
         print('click index=$i');
@@ -32,6 +35,12 @@ class HelloConvexAppBar extends StatelessWidget {
             break;
           case 4:
             Get.offNamed('/Settings');
+            break;
+          case 5:
+            Get.offNamed('/Challange1');
+            break;
+          case 6:
+            Get.offNamed('/MyDropdownSearch');
             break;
           default:
             Get.offNamed('/home');

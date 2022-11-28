@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:learn_getx/custome_drawer.dart';
 import 'Controllers/counterController.dart';
+
 import 'screen2.dart';
 import 'screen3.dart';
 import 'Home.dart';
@@ -17,6 +19,7 @@ class Screen1 extends StatelessWidget {
         title: Text('Screen 1'),
       ),
       bottomNavigationBar: HelloConvexAppBar(1),
+      drawer: customDrawer(),
       body: Center(
           // Center is a layout widget. It takes a single child and positions it
           // in the middle of the parent.

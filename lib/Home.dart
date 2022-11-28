@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:learn_getx/custome_drawer.dart';
 import 'Controllers/counterController.dart';
 import 'screen2.dart';
 import 'screen3.dart';
@@ -18,8 +19,12 @@ class HomePage extends StatelessWidget {
         // the App.build method, and use it to set our appbar title.
         title: Text('learn Get X'),
       ),
+      drawer: customDrawer(),
+
       bottomNavigationBar: HelloConvexAppBar(0),
-      body: Center(
+      body:
+      Center(
+
           // Center is a layout widget. It takes a single child and positions it
           // in the middle of the parent.
           child: Column(

@@ -2,10 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import "Home.dart";
 import 'appbar.dart';
+import 'drowpdownSearch.dart';
 import 'screen2.dart';
 import 'screen1.dart';
 import 'screen3.dart';
 import 'settings.dart';
+import 'challange1.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 
 
@@ -32,7 +34,9 @@ class MyApp extends StatelessWidget {
         GetPage(name: '/Screen1', page: ()=>Screen1()),
         GetPage(name: '/Screen2', page: ()=>Screen2()),
         GetPage(name: '/Screen3', page: ()=>Screen3()),
+        GetPage(name: '/Challange1', page: ()=>Challange1()),
         GetPage(name: '/Settings', page: ()=>Settings()),
+        GetPage(name: '/MyDropdownSearch', page: ()=>MyDropdownSearch()),
       ],
       theme: ThemeData(
         primarySwatch: Colors.blue,
